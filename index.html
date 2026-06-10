@@ -341,6 +341,36 @@
     .f3 { background: linear-gradient(135deg, #7a3b0e, #4a2408); }
     .f4 { background: linear-gradient(135deg, #5e1a1a, #3a0f0f); }
     .f5 { background: linear-gradient(135deg, #1a4a6b, #0d2d42); }
+    .f6 { background: linear-gradient(135deg, #6b3a1a, #42200d); }
+    .f7 { background: linear-gradient(135deg, #1a6b3a, #0d4220); }
+    .f8 { background: linear-gradient(135deg, #6b1a5a, #420d38); }
+    .f9 { background: linear-gradient(135deg, #3a1a6b, #1d0d42); }
+
+    .fotos-grid-extra {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 200px;
+      gap: 12px; max-width: 900px; margin: 12px auto 0;
+      border-radius: 20px; overflow: hidden;
+    }
+    @media (max-width: 600px) {
+      .fotos-grid-extra { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, 160px); }
+    }
+
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px; max-width: 900px; margin: 12px auto 0;
+    }
+    .videos-grid video {
+      width: 100%; height: 280px; object-fit: cover;
+      border-radius: 12px; display: block;
+      background: var(--navy-light);
+    }
+    @media (max-width: 600px) {
+      .videos-grid { grid-template-columns: 1fr 1fr; }
+      .videos-grid video { height: 200px; }
+    }
 
     .foto-cta {
       margin-top: 2rem;
@@ -688,6 +718,52 @@
         <img src="nossa_galera.jpeg" alt="Nossa galera" style="width:100%;height:100%;object-fit:cover;">
         <div class="foto-label">Nossa galera</div>
       </div>
+    </div>
+
+    <div class="fotos-grid-extra reveal">
+      <div class="foto-item f6">
+        <img src="Novas%20Fotos/WhatsApp%20Image%202026-06-09%20at%2018.45.49.jpeg" alt="Excursão" style="width:100%;height:100%;object-fit:cover;">
+        <div class="foto-label">Excursão</div>
+      </div>
+      <div class="foto-item f7">
+        <img src="Novas%20Fotos/WhatsApp%20Image%202026-06-09%20at%2018.45.50.jpeg" alt="Momentos" style="width:100%;height:100%;object-fit:cover;">
+        <div class="foto-label">Momentos</div>
+      </div>
+      <div class="foto-item f8">
+        <img src="Novas%20Fotos/WhatsApp%20Image%202026-06-09%20at%2018.45.52.jpeg" alt="Nossa turma" style="width:100%;height:100%;object-fit:cover;">
+        <div class="foto-label">Nossa turma</div>
+      </div>
+      <div class="foto-item f9">
+        <img src="Novas%20Fotos/WhatsApp%20Image%202026-04-22%20at%2015.51.47.jpeg" alt="Destino" style="width:100%;height:100%;object-fit:cover;">
+        <div class="foto-label">Destino</div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:2.5rem">
+      <p class="section-label" style="color:var(--gold)">Vídeos das excursões</p>
+    </div>
+    <div class="videos-grid reveal">
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-06-09%20at%2018.48.01.mp4" type="video/mp4">
+      </video>
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-06-09%20at%2018.45.47.mp4" type="video/mp4">
+      </video>
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-06-09%20at%2018.45.47%20(1).mp4" type="video/mp4">
+      </video>
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-04-22%20at%2015.51.48.mp4" type="video/mp4">
+      </video>
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-04-22%20at%2015.51.46.mp4" type="video/mp4">
+      </video>
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-04-22%20at%2015.51.47%20(1).mp4" type="video/mp4">
+      </video>
+      <video controls muted playsinline>
+        <source src="Novas%20Fotos/WhatsApp%20Video%202026-04-22%20at%2015.51.47.mp4" type="video/mp4">
+      </video>
     </div>
 
     <p class="foto-cta reveal">Siga nosso Instagram para ver mais fotos: <a href="https://instagram.com/espeditaexcursoes" target="_blank">@espeditaexcursoes</a></p>
